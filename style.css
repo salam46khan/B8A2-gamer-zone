@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
+
+/* global style start ------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.second-color {
+    color: #FF42A5;
+}
+
+.fast-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #F948B2;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #d34b9d;
+}
+
+.btn-secondary {
+    background: #8758F1;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #6c42ce;
+}
+
+p {
+    line-height: 25px;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+q {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* global style end ----------------------------------- */
+/* nav start here  --------------------------------*/
+nav {
+    height: 100px;
+    box-shadow: 2px 2px 10px #3C354F10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo .logo-txt {
+    padding-left: 5px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style: none;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 12px 16px;
+    color: #3C354F;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #FF42A5;
+}
+
+.nav ul li button {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #E7E6E9;
+    color: #3C354F;
+    transition: 0.3s;
+}
+
+.nav ul li button:hover {
+    background: #FF42A5;
+    color: #fff;
+}
+
+.brand {
+    padding: 0 8px;
+}
+
+/* nav end here ---------------------------------- */
+/* banner start here ------------------------------ */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#banner {
+    background: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50% 100%;
+}
+.banner-content {
+    width: 50%;
+}
+.banner-img {
+    width: 50%;
+}
+.banner-img img {
+    width: 100%;
+}
+.bnr-info {
+    display: flex;
+    align-items: center;
+}
+.bnr-info p {
+    font-size: 20px;
+    padding: 5px 0 5px 15px;
+}
+.bnr-title {
+    font-size: 90px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+.bnr-sub-title {
+    font-size: 45px;
+    font-weight: 600;
+}
+.btn-group {
+    margin-top: 20px;
+}
+
+/* banner end here ------------------------------ */
+
+/* gamer start ------------------------------------ */
+#gamer {
+    background: #FCF7FD;
+    padding: 50px 0;
+}
+.gamer {
+    display: flex;
+    align-items: center;
+}
+.gamer-img {
+    width: 55%;
+}
+
+.gamer-img img {
+    width: 100%;
+}
+.gamer-content {
+    width: 45%;
+    text-align: right;
+    padding: 10px;
+}
+.gamer-content p {
+    padding: 15px 0;
+}
+.gamer-content button {
+    margin-bottom: 15px;
+}
+
+/* gamer end ------------------------------------ */
+
+
+@media screen and (max-width: 567px) {
+    nav {
+        height: auto;
+        box-shadow: none;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        padding: 8px 0;
+    }
+
+    #banner {
+        background: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 30px;
+        background: url(images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .bnr-title{
+        font-size: 3.5rem;
+    }
+    .bnr-sub-title{
+        font-size: 2rem;
+    }
+    .banner-img {
+        width: 100%;
+    }
+
+    .gamer{
+        flex-direction: column;
+    }
+    .gamer-content{
+        width: 100%;
+        text-align: center;
+    }
+    .gamer-img{
+        width: 100%;
+    }
+
+}
